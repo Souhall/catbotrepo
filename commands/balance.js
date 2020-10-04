@@ -1,6 +1,6 @@
 const { Message, DiscordAPIError } = require("discord.js");
 const Discord = require("discord.js");
-const Mongoose = require("mongoose");
+const Mongoose = require("mongoose.js");
 const Data = require("../models/data.js")
 
 Mongoose.connect(process.env.MONGOPASS, { 
