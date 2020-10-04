@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const Mongoose = require("mongoose");
 
-const dataSchema = mongoose.Schema({
+const dataSchema = Mongoose.Schema({
     name: String,
     userID: String,
     cash: Number,
@@ -10,4 +10,4 @@ const dataSchema = mongoose.Schema({
     daily: Number
 })
 
-module.exports = mongoose.model("Data", dataSchema)
+module.exports = Mongoose.model("Data", dataSchema)
