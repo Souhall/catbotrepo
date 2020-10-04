@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const Mongoose = require("mongoose");
 const Data = require("../models/data.js")
 
-Mongoose.connect(process.MONGOPASS, { 
+Mongoose.connect(process.env.MONGOPASS, { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
