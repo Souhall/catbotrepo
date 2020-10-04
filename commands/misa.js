@@ -5,9 +5,7 @@ module.exports.run = async (bot, Message, args) => {
 
 const embed = new Discord.MessageEmbed()
 .setTitle('Cat Kingdom Bot ')
-.addField('Version', "0.1")
-.addField('Help command', "!help")
-.addField('Creator', "Maximus")
+.addField('ANO KVASNA PROFILOVKA', "uwu")
 .setDescription("--------------------------------------")
 .setColor(0xF35A3A)
 Message.channel.send(embed);
@@ -15,6 +13,6 @@ Message.channel.send(embed);
 }
 
 module.exports.help = {
-    name: "test",
+    name: "misa",
     alieses: []
 }
