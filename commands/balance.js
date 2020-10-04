@@ -1,11 +1,9 @@
 const { Message, DiscordAPIError } = require("discord.js");
 const Discord = require("discord.js");
 const Mongoose = require("mongoose");
-const botconfig = require("../botconfig.json"); //delete when adding to host
 const Data = require("../models/data.js")
 
-//change to Mongoose.connect(process.MONGOPASS when adding to host
-Mongoose.connect(botconfig.mongopass, { 
+Mongoose.connect(process.MONGOPASS, { 
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
